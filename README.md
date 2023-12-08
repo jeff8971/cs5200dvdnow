@@ -1,18 +1,32 @@
-# mydvdmanger
+# redbox: A Comprehensive DVD Management System
 
-#### Introduction
-Redbox is a simple DVD management system. The main business logic includes adding, deleting, modifying and querying DVDs, the administrator's operation of user accounts, personal information modification, borrowing books and approving borrowing books, returning books, etc.
+## Introduction
+redbox is an advanced DVD management system designed to streamline the operations of DVD rentals and returns. It offers a robust platform for administrators and users to interact with DVD data, manage accounts, and handle transactions efficiently.
 
-#### Software architecture
-Java course final design written in swing+jdbc
+## Features
+- **DVD Management**: Add, delete, modify, and query DVDs in the system (CRUD).
+- **User Account Management**: Admins can manage user accounts, including creation, modification, and deletion.
+- **Transaction Handling**: Facilitates borrowing and returning of DVDs with approval workflows.
+- **Logging**: Tracks administrative and user activities for audit and monitoring.
 
-#### Development environment
-1. jdk1.8 mysql8.0
-2. IDEA or any other Java compiler
+## Software Architecture
+This project is developed using Java Swing for the user interface and JDBC for database interaction, showcasing a practical implementation of GUI development and database management in Java.
 
-#### Instructions for use
+## Development Environment
+- **Java JDK 1.8**: Ensures compatibility and performance.
+- **MySQL 8.0**: Provides a robust database solution.
+- **IDEA or any Java Compiler**: For code compilation and execution.
 
-1. Import the project into the compiler
-2. Run the redbox.sql script in navicat to create the database or run the script directly through the MySQL terminal
-3. Please modify the database password in src/utils/DbUtil.java
-4. Run src/Main.java to start the program
+## Getting Started
+1. **Import the Project**: Clone the repository and import it into your Java IDE.
+2. **Database Setup**: Execute the `redbox.sql` script to set up the database schema. Customize the database configuration in `src/utils/DbUtil.java`.
+3. **Run the Application**: Start the application by running `src/Main.java`.
+
+## Detailed Overview
+- **Main Entry**: The application starts at `Main.java`, initializing the user interface.
+- **User Interface**: Swing-based UI components are located under `src/ui`, providing a user-friendly interface for interaction.
+- **Data Access Objects (DAOs)**: `src/dao` contains DAO classes for handling database operations for different entities like DVDs, users, and transactions.
+- **Beans**: The `src/bean` directory contains classes representing different entities such as `Dvd`, `User`, `Borrow`, etc.
+
+## Contributions
+Contributions to redbox are welcome. Please read our contribution guidelines before submitting a pull request.
