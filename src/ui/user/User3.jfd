@@ -1,0 +1,148 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq l {par t {comp label1:::p::p, comp label6:::p::p}, space s:::p, par l:::p {comp textField1::::128:x, comp textField3::::128:x}, space s:::p, par l {seq {comp label5:::p::p, space s::25:x, comp label2:::p::p, space :::p, comp textField2:::p:128:p}, seq t {space :0:105:x, par l {comp label7::t:p::p, comp label4::t:p::p}, space :::p, par l {comp textField4:::p:128:p, comp comboBox2:::p::p}}}}, seq l {space :p:16:p, comp label3:::p::p, space s:::p, comp comboBox1:::p::p, space :0:335:x}}, space :p:21:p}, seq t {space ::244:x, comp button1:::p::p, space :p:216:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, par b {comp label1::b:p::p, comp textField1::b:p::p, comp label5::b:p::p, comp textField2::b:p::p, comp label2::b:p::p}, par l {seq {space :::p, par b {comp label6::b:p::p, comp textField3::b:p::p}}, seq l {space :p:14:p, par b {comp textField4::b:p::p, comp label7::b:p::p}}}, space u:::p, par l {par b {comp label3::b:p::p, comp comboBox1::b:p::p}, par b:l {comp label4::b:p::p, comp comboBox2::b:p::p}}, space s:::p, comp button1:::p::p, space ::33:x}}"
+		} ) {
+			name: "this"
+			"title": "用户信息"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "用户编号"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "用户姓名"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "用户性别"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "用户年龄"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "不可修改！"
+				"foreground": sfield java.awt.Color red
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "用户名"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "密码"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "男"
+					addElement( "男" )
+					addElement( "女" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox2"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "1"
+					addElement( "1" )
+					addElement( "2" )
+					addElement( "3" )
+					addElement( "4" )
+					addElement( "5" )
+					addElement( "6" )
+					addElement( "7" )
+					addElement( "8" )
+					addElement( "9" )
+					addElement( "10" )
+					addElement( "11" )
+					addElement( "12" )
+					addElement( "13" )
+					addElement( "14" )
+					addElement( "15" )
+					addElement( "16" )
+					addElement( "17" )
+					addElement( "18" )
+					addElement( "19" )
+					addElement( "20" )
+					addElement( "21" )
+					addElement( "22" )
+					addElement( "23" )
+					addElement( "24" )
+					addElement( "25" )
+					addElement( "26" )
+					addElement( "27" )
+					addElement( "28" )
+					addElement( "29" )
+					addElement( "30" )
+					addElement( "31" )
+					addElement( "32" )
+					addElement( "33" )
+					addElement( "34" )
+					addElement( "35" )
+					addElement( "36" )
+					addElement( "37" )
+					addElement( "38" )
+					addElement( "39" )
+					addElement( "40" )
+					addElement( "41" )
+					addElement( "42" )
+					addElement( "43" )
+					addElement( "44" )
+					addElement( "45" )
+					addElement( "46" )
+					addElement( "47" )
+					addElement( "48" )
+					addElement( "49" )
+					addElement( "50" )
+					addElement( "51" )
+					addElement( "52" )
+					addElement( "53" )
+					addElement( "54" )
+					addElement( "55" )
+					addElement( "56" )
+					addElement( "57" )
+					addElement( "58" )
+					addElement( "59" )
+					addElement( "60" )
+					addElement( "61" )
+					addElement( "62" )
+					addElement( "63" )
+					addElement( "64" )
+					addElement( "65" )
+					addElement( "66" )
+					addElement( "67" )
+					addElement( "68" )
+					addElement( "69" )
+					addElement( "70" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "修改"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 560, 275 )
+		} )
+	}
+}

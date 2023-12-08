@@ -1,0 +1,97 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {comp label1::::561:x, comp scrollPane1::::561:x}, space :::p}, seq l {space :p:90:p, comp button1:::p::p, space ::188:x, comp button2:::p::p, space :p:99:p}, seq {space :p:30:p, par t {seq {comp label3:::p::p, space s:::p, comp textField1:::p:163:p}, seq {comp label5:::p::p, space s:::p, comp textField3:::p:162:p}}, space s:::p, par l {comp label4:::p::p, comp label6:::p::p}, space ::28:x, par l:::p {comp textField2::::169:x, comp textField4::::169:x}, space :::p}, seq l {space :::p, comp label2:::p::p, space :189:503:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :::p, comp scrollPane1:::p:75:p, space u:::p, comp label2:::p::p, space s:::p, par b {comp label3::b:p::p, comp textField1::b:p::p, comp label4::b:p::p, comp textField2::b:p::p}, space :::x, par b {comp label5::b:p::p, comp textField3::b:p::p, comp label6::b:p::p, comp textField4::b:p::p}, space :p:44:p, par b {comp button1::b:p::p, comp button2::b:p::p}, space :p:26:p}}"
+		} ) {
+			name: "this"
+			"title": "借阅审批"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "借阅列表"
+				"horizontalAlignment": 0
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "scrollPane1MousePressed", true ) )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "用户id" )
+						add( "借阅图书id" )
+						add( "借阅时间" )
+						add( "借阅天数" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "table1MousePressed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "批准"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "拒绝"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "审批操作"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "用户id"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "借阅图书id"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "借阅时间"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "借阅天数"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField3"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField4"
+				"editable": false
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 575, 390 )
+		} )
+	}
+}
