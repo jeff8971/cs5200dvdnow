@@ -56,7 +56,7 @@ public class Log extends JFrame {
                     aLog.setaSex(trueAdmin.getaSex());
                     aLog.setaAge(trueAdmin.getaAge());
                     ALogDao aLogDao=new ALogDao();
-                    aLogDao.addAdmin(con,aLog); //写入日志
+                    aLogDao.addAdmin(con,aLog); // write into log
 
                     new AdminMain().setVisible(true);
                 }else {

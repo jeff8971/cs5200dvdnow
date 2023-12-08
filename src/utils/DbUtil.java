@@ -7,7 +7,7 @@ import java.sql.DriverManager;
  * Database connection class
  */
 public class DbUtil {
-    private String url="jdbc:mysql://localhost:3306/redbox"; // Your URL, database name is "books"
+    private String url="jdbc:mysql://localhost:3306/redbox"; // Your URL, database name is "redbox"
     private String user="root"; // Your username
     private String psd="Zhaoyigeusa2019"; // Your password
     private String jdbcName ="com.mysql.cj.jdbc.Driver";
